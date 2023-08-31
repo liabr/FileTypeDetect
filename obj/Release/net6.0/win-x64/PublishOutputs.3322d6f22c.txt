@@ -1,0 +1,2 @@
+C:\BJSS_Dev\Bench Project\C#\FileTypeDetect\bin\Release\net6.0\win-x64\publish\FileTypeDetect.pdb
+C:\BJSS_Dev\Bench Project\C#\FileTypeDetect\bin\Release\net6.0\win-x64\publish\FileTypeDetect.exe

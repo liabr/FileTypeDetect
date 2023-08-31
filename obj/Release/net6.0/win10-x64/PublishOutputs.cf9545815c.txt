@@ -1,0 +1,2 @@
+C:\BJSS_Dev\Bench Project\C#\mimemapping\bin\Release\net6.0\win10-x64\publish\mimemapping.pdb
+C:\BJSS_Dev\Bench Project\C#\mimemapping\bin\Release\net6.0\win10-x64\publish\mimemapping.exe
