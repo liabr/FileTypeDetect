@@ -30,12 +30,19 @@ namespace FileTypeDetect.models
             if(Directory.Exists(filePath)){
                 var f = Directory.GetFiles(filePath, "");
 
+                Console.WriteLine($"========Total nos of files read at this location: {f.Length}" );
+                Console.WriteLine($"========File location: {filePath}");
+                int i =0;
                 foreach( var a in f){
                     config.TryGetValue(Path.GetFileNameWithoutExtension(a), out var excelDataFileName);
+                    
                     if(excelDataFileName is not null){
+                        i++;
                         CreateNewDirectoryWithExtension(excelDataFileName, a,  newDirectoryPath);
                     }
                 }
+
+                Console.WriteLine($"=========Total nos of mappings found: {i}" );
             }
         }
     }

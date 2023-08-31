@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\BJSS_Dev\\Bench Project\\C#\\FileTypeDetect\\FileTypeDetect.csproj": {}
+    "C:\\BJSS_Dev\\Bench Project\\C#\\FileTypeDetect\\FileTypeDetect.csproj": {}
   },
   "projects": {
-    "c:\\BJSS_Dev\\Bench Project\\C#\\FileTypeDetect\\FileTypeDetect.csproj": {
+    "C:\\BJSS_Dev\\Bench Project\\C#\\FileTypeDetect\\FileTypeDetect.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\BJSS_Dev\\Bench Project\\C#\\FileTypeDetect\\FileTypeDetect.csproj",
+        "projectUniqueName": "C:\\BJSS_Dev\\Bench Project\\C#\\FileTypeDetect\\FileTypeDetect.csproj",
         "projectName": "FileTypeDetect",
-        "projectPath": "c:\\BJSS_Dev\\Bench Project\\C#\\FileTypeDetect\\FileTypeDetect.csproj",
+        "projectPath": "C:\\BJSS_Dev\\Bench Project\\C#\\FileTypeDetect\\FileTypeDetect.csproj",
         "packagesPath": "C:\\Users\\lijo.abraham\\.nuget\\packages\\",
-        "outputPath": "c:\\BJSS_Dev\\Bench Project\\C#\\FileTypeDetect\\obj\\",
+        "outputPath": "C:\\BJSS_Dev\\Bench Project\\C#\\FileTypeDetect\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\lijo.abraham\\AppData\\Roaming\\NuGet\\NuGet.Config"

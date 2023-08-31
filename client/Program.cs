@@ -20,7 +20,10 @@ namespace FileTypeDetect.client
             var fileNameCreator = new FileWithExtensionFromExcel();
             if(directoryName is not null && newDirectoryPath is not null){
                 fileNameCreator.GetFileType(directoryName, newDirectoryPath: newDirectoryPath, configFileLocation);
-            }           
+            }     
+
+            Console.WriteLine("File Detect Operation successsfully completed. Press any key to exit");
+            Console.ReadKey();      
         }
     }
 }

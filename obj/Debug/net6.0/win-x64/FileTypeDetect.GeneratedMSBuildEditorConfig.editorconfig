@@ -10,4 +10,4 @@ build_property.EnableSingleFileAnalyzer = true
 build_property.EnableTrimAnalyzer = 
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = FileTypeDetect
-build_property.ProjectDir = c:\BJSS_Dev\Bench Project\C#\FileTypeDetect\
+build_property.ProjectDir = C:\BJSS_Dev\Bench Project\C#\FileTypeDetect\

@@ -34,9 +34,12 @@ namespace FileTypeDetect.models
                  format = inspector.DetermineFileFormat(stream); 
             }
             if(format?.Extension is not null){
-                ExcelDataModel excelDataModel = new();
-                excelDataModel.FileExtension = format.Extension;
-                excelDataModel.Title = filePath;
+                ExcelDataModel excelDataModel = new()
+                {
+                    FileExtension = format.Extension,
+                    Title = filePath,
+                    FolderName = filePath
+                };
                 CreateNewDirectoryWithExtension(excelDataModel, filePath, newDirectoryPath);
             } 
         }

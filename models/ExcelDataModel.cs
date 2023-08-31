@@ -7,7 +7,7 @@ namespace FileTypeDetect.models
         [Column("Title")]
         public string Title { get; set; }
 
-        [Column("ContentDocument ID")]
+        [Column("Latest Published Version ID")]
         public string ContentDocumentId { get; set; }
 
         [Column("Created By ID")]
@@ -16,7 +16,7 @@ namespace FileTypeDetect.models
         [Column("File Extension")]       
         public string FileExtension{get; set; }
 
-        [Column("Parent ID")]       
+        [Column("Parent Record Name")]       
         public string FolderName{get; set; }
     }
 }

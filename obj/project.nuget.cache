@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FkLtYtrMl510NTf9iorn2wVFPTcFgbsWuzRC2wdkLNGt97DaZvw0QXNxuHCqWgIBEa6YxFajbpulKdtmZxu0Ag==",
+  "dgSpecHash": "odLjT0Uhg97EFnPp84rDwICkMhKqwVvft9iVyJvZfRl+UTVz1EZAjrR4diHSSCMm8yBqUTAOiX0sX8o9um/d8g==",
   "success": true,
-  "projectFilePath": "c:\\BJSS_Dev\\Bench Project\\C#\\FileTypeDetect\\FileTypeDetect.csproj",
+  "projectFilePath": "C:\\BJSS_Dev\\Bench Project\\C#\\FileTypeDetect\\FileTypeDetect.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lijo.abraham\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
     "C:\\Users\\lijo.abraham\\.nuget\\packages\\enums.net\\4.0.1\\enums.net.4.0.1.nupkg.sha512",
