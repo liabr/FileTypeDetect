@@ -4,6 +4,6 @@ namespace FileTypeDetect.models
     {
         Dictionary<string, ExcelDataModel> InitializeConfigurationExcel(string fileName);
         void GetFileType(string filePath, string newDirectoryPath, string configFileLocation);
-        void CreateNewDirectoryWithExtension(string filePath, string newFileNameWithExtension, string newDirectoryPath);
+        void CreateNewDirectoryWithExtension(ExcelDataModel excelDataModel, string fileName,  string newDirectoryPath);
     }
 }

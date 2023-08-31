@@ -1,4 +1,5 @@
 using FileSignatures;
+using FileSignatures.Formats;
 
 namespace FileTypeDetect.models
 {
@@ -9,16 +10,18 @@ namespace FileTypeDetect.models
             return new Dictionary<string, ExcelDataModel>();
         }
 
-        public void CreateNewDirectoryWithExtension(string filePath, string extensionForFileType, string newDirectoryPath)
+        public void CreateNewDirectoryWithExtension(ExcelDataModel excelDataModel, string fileName,  string newDirectoryPath)
         {
             if(!Directory.Exists(newDirectoryPath)){
                 Directory.CreateDirectory(newDirectoryPath);
             }
             try{
                 var destinationFileName = newDirectoryPath + 
-                                                Path.GetFileNameWithoutExtension(filePath) + 
-                                                  "." + extensionForFileType;
-                File.Copy(filePath, destinationFileName, true);
+                                                Path.DirectorySeparatorChar +
+                                                fileName + 
+                                                Path.PathSeparator +
+                                                excelDataModel.FileExtension;
+                File.Copy(excelDataModel.FolderName, destinationFileName, true);
             }
             catch (Exception m) { Console.WriteLine(m.Message); }        
         }
@@ -31,8 +34,10 @@ namespace FileTypeDetect.models
                  format = inspector.DetermineFileFormat(stream); 
             }
             if(format?.Extension is not null){
-                CreateNewDirectoryWithExtension(filePath, format.Extension,
-                                            newDirectoryPath);
+                ExcelDataModel excelDataModel = new();
+                excelDataModel.FileExtension = format.Extension;
+                excelDataModel.Title = filePath;
+                CreateNewDirectoryWithExtension(excelDataModel, filePath, newDirectoryPath);
             } 
         }
     }

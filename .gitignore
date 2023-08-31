@@ -1,0 +1,16 @@
+/bin
+/obj
+*.nuget
+
+obj/project.nuget.cache
+obj/*
+obj/Debug/net6.0/win-x64/FileTypeDetect.pdb
+obj/Debug/net6.0/win-x64/FileTypeDetect.pdb
+obj/Debug/net6.0/win-x64/ref/FileTypeDetect.dll
+obj/Debug/net6.0/win-x64/refint/FileTypeDetect.dll
+obj/Debug/net6.0/win-x64/refint/FileTypeDetect.dll
+obj/project.nuget.cache
+obj/Debug/net6.0/win-x64/FileTypeDetect.dll
+obj/Debug/net6.0/win-x64/FileTypeDetect.pdb
+obj/Debug/net6.0/win-x64/ref/FileTypeDetect.dll
+obj/Debug/net6.0/win-x64/refint/FileTypeDetect.dll

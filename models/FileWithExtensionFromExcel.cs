@@ -8,13 +8,18 @@ namespace FileTypeDetect.models
             var excelData = new ExcelMapper(fileName).Fetch<ExcelDataModel>(0); 
             return excelData.ToDictionary(x => x.ContentDocumentId);
         }
-        public void CreateNewDirectoryWithExtension(string filePath, string newFileNameWithExtension, string newDirectoryPath)
+        public void CreateNewDirectoryWithExtension(ExcelDataModel excelDataModel, string fileName, string newDirectoryPath)
         {
-             if(!Directory.Exists(newDirectoryPath)){
-                Directory.CreateDirectory(newDirectoryPath);
+            var entireDirectoryPath = newDirectoryPath + Path.DirectorySeparatorChar + excelDataModel.FolderName;
+            if(!Directory.Exists(entireDirectoryPath)){
+                Directory.CreateDirectory(entireDirectoryPath);
             }
             try{
-                File.Copy(filePath, newDirectoryPath + Path.DirectorySeparatorChar + newFileNameWithExtension, true);
+                File.Copy(fileName, entireDirectoryPath
+                                                                    + Path.DirectorySeparatorChar
+                                                                    + excelDataModel.Title
+                                                                    + "."
+                                                                    + excelDataModel.FileExtension, true);
             }
             catch (Exception m) { Console.WriteLine(m.Message); } 
         }
@@ -28,7 +33,7 @@ namespace FileTypeDetect.models
                 foreach( var a in f){
                     config.TryGetValue(Path.GetFileNameWithoutExtension(a), out var excelDataFileName);
                     if(excelDataFileName is not null){
-                        CreateNewDirectoryWithExtension(a, excelDataFileName.Title + "." + excelDataFileName.FileExtension,  newDirectoryPath);
+                        CreateNewDirectoryWithExtension(excelDataFileName, a,  newDirectoryPath);
                     }
                 }
             }

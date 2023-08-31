@@ -15,5 +15,8 @@ namespace FileTypeDetect.models
 
         [Column("File Extension")]       
         public string FileExtension{get; set; }
+
+        [Column("Parent ID")]       
+        public string FolderName{get; set; }
     }
 }
