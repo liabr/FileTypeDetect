@@ -12,12 +12,12 @@ This is .Net Core Console Application to detect file types and perform system op
 ```
 
 ### Nuget Dependencies
-    Excel Mapper - Performs all the Excel operation and Object mapping using NPOI
-    FileSignature - Performs file operation to detect file types
+- Excel Mapper - Performs all the Excel operation and Object mapping using NPOI
+- FileSignature - Performs file operation to detect file types
 
 ### Command Line Arguments
-    Directory Name when the detect file needs to be places
-    Directoy Name wherein converted files needs to be places
-    File containg all the detected fields
+- Directory Name when the files to be converted are places
+- Directoy Name wherein converted files needs to be places
+- File containg all the detected fields. Template is 2.xlsx in repo
 
 
