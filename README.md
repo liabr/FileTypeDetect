@@ -4,8 +4,11 @@
 
 This is .Net Core Console Application to detect file types and perform system operation
 
-# Net Core Build Configurations
+## Net Core Build Configurations
 ``
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <AssemblyName>FileTypeDetect</AssemblyName>   
+    <PublishSingleFile>true</PublishSingleFile>
 ``
 
 ## Nuget Dependencies
